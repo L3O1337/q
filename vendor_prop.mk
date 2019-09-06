@@ -12,6 +12,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     drm.service.enabled=true \
     keyguard.no_require_sim=true \
     persist.backup.ntpServer=0.pool.ntp.org \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
     persist.radio.multisim.config=dsds \
     persist.sys.job_delay=true \
     persist.sys.mcd_config_file=/system/etc/mcd_default.conf \
