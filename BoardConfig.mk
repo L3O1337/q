@@ -29,7 +29,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 BOARD_VENDOR := xiaomi
-TARGET_BOARD_PLATFORM := sdm660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno509
 
 # Architecture
@@ -63,9 +62,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/tulip
 TARGET_KERNEL_CONFIG := tulip-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
-# QCOM
-BOARD_USES_QCOM_HARDWARE := true
-TARGET_USE_SDCLANG := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
