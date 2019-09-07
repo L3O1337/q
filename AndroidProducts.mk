@@ -1,4 +1,4 @@
-#
+																																																																																																																																																																																																																									#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cos_tulip.mk
+    $(LOCAL_DIR)/potato_tulip.mk
