@@ -3,6 +3,23 @@ $(warning ************* BOARD VNDK is not enabled - compiling vndk-sp **********
 LOCAL_PATH := $(call my-dir)
 
 include $(LOCAL_PATH)/vndk-sp-libs.mk
+EXTRA_VENDOR_LIBRARIES_32 := \
+    libaudioclient \
+    libaudiomanager \
+    libbinder \
+    libcamera_client \
+    libft2 \
+    libgui.vendor \
+    libharfbuzz_ng \
+    libheif \
+    libicui18n \
+    libicuuc \
+    libmedia \
+    libstagefright \
+    libstagefright_foundation \
+    libmediametrics \
+    libminikin \
+    libsonivox
 
 vndk_sp_dir := vndk-sp-$(PLATFORM_VNDK_VERSION)
 
@@ -47,3 +64,5 @@ include $(BUILD_PHONY_PACKAGE)
 
 vndk_sp_dir :=
 endif
+LOCAL_REQUIRED_MODULES := $(addsuffix .vndk-ext-gen,$(EXTRA_VENDOR_LIBRARIES_32) $(EXTRA_VENDOR_LIBRARIES_64))
+include $(BUILD_PHONY_PACKAGE)
