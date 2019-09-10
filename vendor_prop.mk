@@ -37,6 +37,8 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
     ro.hardware.nfc_nci=nqx.default \
     ro.opengles.version=196610 \
+    af.fast_track_multiplier=1 \
+    vendor.audio_hal.period_size=192 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
     ro.vendor.audio.sos=true \
@@ -116,3 +118,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true
+
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.qcom.bluetooth.soc=cherokee \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true
