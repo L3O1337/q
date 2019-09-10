@@ -39,6 +39,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
+# Shims
+PRODUCT_PACKAGES += \
+    camera.sdm660_shim
+
+# RRO
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
 PRODUCT_COPY_FILES += \
