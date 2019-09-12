@@ -358,7 +358,7 @@ BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/jasmine_sprout
+    device/xiaomi/tulip
 
 # Vibrator
 PRODUCT_PACKAGES += \
